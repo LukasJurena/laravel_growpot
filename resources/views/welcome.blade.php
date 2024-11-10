@@ -231,7 +231,7 @@
             <div class="container">
                 <div class="flex">
                     <div class="obrazek">
-                        <a href="/"><img src="Eshop-Laravel/images/grow_pot_zeleny.png" alt="GrowPot Logo" /></a>
+                        <a href="/"><img src="{{ asset('images/grow_pot_zeleny.png') }}" alt="GrowPot Logo"></a>
                     </div>
                     <ul>
                         <li><a href="/">Domů</a></li>
@@ -259,24 +259,25 @@
             <!-- Produkt Section -->
             <div id="produkt">
                 <div class="grid">
-                    <img src="Eshop-Laravel/public/images/Kvetinac_1.png" alt="Product Image" />
+                    <img src="{{ asset('images/Kvetinac_1.png') }}" alt="Product Image">
                     <div>
                         <div class="produkt-item">
-                            <img src="Eshop-Laravel/public/images/watering-can.png" alt="Watering Can" />
+                            <img src="{{ asset('images/watering-can.png') }}" alt="Watering Can">
+
                             <div>
                                 <h2>Automatizované zavlažování</h2>
                                 <p>Zalévání Integrovaným zavlažovacím systémem.</p>
                             </div>
                         </div>
                         <div class="produkt-item">
-                            <img src="Eshop-Laravel/public/images/solar-panel.png" alt="Solar Panel" />
+                            <img src="{{ asset('images/solar-panel.png') }}" alt="Solar Panel">
                             <div>
                                 <h2>Ekologické napájení</h2>
                                 <p>Napájení pomocí solárních panelů.</p>
                             </div>
                         </div>
                         <div class="produkt-item">
-                            <img src="Eshop-Laravel/public/images/test.png" alt="Fertilization" />
+                            <img src="{{ asset('images/test.png') }}" alt="Fertilization">
                             <div>
                                 <h2>Automatické hnojení</h2>
                                 <p>Napájen solárními panely, které efektivně využívají sluneční energii.</p>
@@ -288,7 +289,7 @@
 
             <!-- Features Section -->
             <div class="features">
-                <img src="Eshop-Laravel/public/images/Logo_pot.png" alt="GrowPot Logo">
+                <img src="{{ asset('images/Logo_pot.png') }}" alt="GrowPot Logo">
                 <ul class="features-list">
                     <li><span class="feature">Efektivní</span></li>
                     <li><span class="feature">Úsporný</span></li>
@@ -348,7 +349,7 @@
             });
 
             // Features section animation with ScrollTrigger (moving elements from right to left)
-            gsap.from(".features .feature", {
+            /*gsap.from(".features .feature", {
                 duration: 1,
                 opacity: 0,
                 x: 200, // Začíná 200px vpravo
@@ -361,7 +362,7 @@
                     scrub: true, // Plynulý pohyb se scrollováním
                     markers: false // Zobrazí markery pro ladění
                 }
-            });
+            });*/
 
             // Mouse move effect for the last image in the Features section
             const lastImage = document.querySelector('.features img');
